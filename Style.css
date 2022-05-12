@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins;
+    background-image: linear-gradient(to bottom right, #192024, #3f4953);
+    background-attachment: fixed;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes pulse {
+    70% {
+        color:azure;
+    }
+}
+
+#Profile--Photo {
+    border-radius: 50%;
+    width: 250px;
+    padding: 0px;
+}
+    #Profile--Photo{
+        margin-bottom:20px;
+    }
+
+#Top {
+    padding: 5px 0px;
+    border-bottom:solid;
+    display: flex;
+    justify-content: space-around;
+}   
+#Top--Logo {
+        border: double 5px;
+        width: 45px;
+        height: 45px;
+    }
+
+#Top--Social {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+} 
+#Top--Social li {
+      padding:0px 15px;
+  }
+#Top--Social li i {
+        color: black;
+    }
+
+.hover--highlight :hover {
+    color: azure !important;
+}
+.hover--highlight :hover{
+    color: azure !important;
+}
+
+#Profile {
+    display: flex;
+    justify-content:center;
+}
+#Profile--Photo {
+    width:15vw;
+    padding: 30px;
+}
+
+#Name h1{
+    text-align:center;
+    margin:5px 0px 10px 0px;
+}
+
+#Container {
+    text-align: center;
+}
+#Container i {
+    display: inline-flex;
+    transition: transform 1s, color 1.5s;
+    animation: pulse 1s infinite;
+    animation-direction:alternate;
+}
+#Container--Text {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: color 2s, opacity .5s, height 1s;
+}
+.Container--Anim {
+    color: azure !important;
+    opacity: 1 !important;
+    height: 120px !important;
+}
+
+.animRotate {
+    color: azure;
+    transform: rotate(180deg);
+}
+
+
+#Forms{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    
+    padding: 20px 0px 40px 0px;
+}
+#Forms--Email {
+    width: 250px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 1px 10px;
+    outline-width: 0;
+    border: none;
+}
+#Forms--Button {
+    border: none;
+    padding: 1px 10px 1px 10px;
+    border-radius: 0px 10px 10px 0px;
+    background-color:black;
+    color:azure;
+    transition:all .2s;
+}
+#Forms--Button:hover {
+    opacity: 9;
+    background-color: azure;
+    color: black;
+}
+
+main {
+        border-bottom: solid;
+    }
+
+#email {
+    text-align: center;
+    padding: 5px;
+}
+#email a{
+    text-decoration: none;
+    color: black;
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://kit.fontawesome.com/6a17869b1f.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <title>Ian S Pimentel</title>
+    <link href="Style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main id="main">
+
+        <div id="Top">
+            <img id="Top--Logo" draggable="false" src="./images/IS.png" alt="Logo" />
+
+            <ul id="Top--Social" class="hover--highlight">
+                <li> <a draggable="false" target="_blank" href="https://github.com/DippoZz"> <i class="fa-brands fa-github fa-2x"></i> </a> </li>
+                <li> <a draggable="false" target="_blank" href="https://twitter.com/ZzDippo"> <i class="fa-brands fa-twitter fa-2x"></i> </a> </li>
+                <li> <a draggable="false" target="_blank" href="https://www.instagram.com/zzdippo/"> <i class="fa-brands fa-instagram fa-2x"></i> </a> </li>
+            </ul>
+
+        </div>
+
+        <div id="Profile">
+            <img style="padding: 20px;" id="Profile--Photo" src="./images/dippo.png" alt="Profile Picture" />
+        </div>
+
+        <div id="Name">
+            <h1>Ian de Souza Pimentel</h1>
+        </div>
+
+        <div id="Container">
+            <i onclick="animText()" id="arrow" class="fa-solid fa-caret-up fa-2x"></i>
+
+            <div id="Container--Text">
+                <h3>Front and Back End Developer</h3>
+                <p id="desc">Formado em Programação de Jogos Digitais<br> magna rebum at kasd sed stet ipsum illum enim sanctus.</p>
+            </div>
+        </div>
+
+        <div id="Forms">
+            <input id="Forms--Email" type="email" placeholder="your@email.com">
+            <input id="Forms--Button" type="button" value="Enviar!">
+        </div>
+
+    </main>
+
+    <div id="email" class="hover--highlight">
+        <a href="mailto:contato.iansouzapimentel@gmail.com">contato.iansouzapimentel@gmail.com</a>
+    </div>
+
+    <script>
+        function animText() {
+            var desc = document.getElementById("Container--Text");
+            desc.classList.toggle("Container--Anim");
+            var arrow = document.getElementById("arrow");
+            arrow.classList.toggle("animRotate");
+        }
+    </script>
+
+</body>
+</html>
