@@ -9,24 +9,21 @@ body {
     user-select: none;
 }
 
+main {
+    color: gold;
+    display: flex;
+    flex-flow: column wrap;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
 
 @keyframes pulse {
     70% {
-        color:azure;
+        color:goldenrod;
     }
 }
-
-#Profile--Photo {
-    border-radius: 50%;
-    width: 250px;
-    padding: 0px;
-}
-    #Profile--Photo{
-        margin-bottom:20px;
-    }
 
 #Top {
     padding: 5px 0px;
@@ -38,6 +35,7 @@ body::-webkit-scrollbar {
         border: double 5px;
         width: 45px;
         height: 45px;
+        background-color: goldenrod;
     }
 
 #Top--Social {
@@ -59,13 +57,19 @@ body::-webkit-scrollbar {
     color: azure !important;
 }
 
-#Profile {
-    display: flex;
-    justify-content:center;
+
+#container--photo{
+    justify-content: center;
 }
-#Profile--Photo {
-    width:15vw;
-    padding: 30px;
+#Profile {
+    background-image: url(./images/dippo.jpeg);
+    background-size: 300px;
+    background-position: 20% 35%;
+    width: 20vw;
+    height: 20vw;
+    margin: 0 40%;
+    border-radius:50%;
+    transition: all .1s;
 }
 
 #Name h1{
@@ -137,10 +141,16 @@ main {
 #email {
     text-align: center;
     padding: 5px;
+
 }
-#email a{
-    text-decoration: none;
-    color: black;
+    #email a {
+        text-decoration: none;
+        color: black;
+        color: gold;
+    }
+
+.strokeme h1:hover {
+    text-shadow: -1.5px -1.5px 0 #8b6508, 1.5px -1.5px 0 #8b6508, -1.5px 1.5px 0 #8b6508, 1.5px 1.5px 0 #8b6508;
 }
 
 

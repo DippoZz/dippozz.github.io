@@ -21,11 +21,12 @@
 
         </div>
 
-        <div id="Profile">
-            <img style="padding: 20px;" id="Profile--Photo" src="./images/dippo.png" alt="Profile Picture" />
+        <div id="container--photo">
+            <div id="Profile">
+            </div>
         </div>
 
-        <div id="Name">
+        <div id="Name" class="strokeme">
             <h1>Ian de Souza Pimentel</h1>
         </div>
 
@@ -56,6 +57,13 @@
             var arrow = document.getElementById("arrow");
             arrow.classList.toggle("animRotate");
         }
+
+        const el = document.getElementById("Profile");
+            el.addEventListener("mousemove", (e) => {
+                el.style.backgroundPositionX = (-e.offsetX/5) + 20 + "px";
+                el.style.backgroundPositionY = (-e.offsetY/5) - 60 + "px";
+            });
+
     </script>
 
 </body>
